@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informes de Pentest</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #0d1117;
+            color: #e6edf3;
+        }
+
+
+        h2 {
+            color: #58a6ff;
+            margin-bottom: 20px;
+        }
+
+        .report {
+            max-width: 1000px;
+            margin: auto;
+            padding: 60px 20px;
+            display: grid;
+            gap: 20px;
+        }
+
+
+
+        header {
+            text-align: center;
+            padding: 80px 20px 40px;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        .back {
+            display: block;
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .back a {
+            color: #8b949e;
+            text-decoration: none;
+        }
+
+        .card {
+            border: 1px solid #30363d;
+            border-radius: 14px;
+            padding: 20px;
+            background-color: #161b22;
+            transition: 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            border-color: #58a6ff;
+        }
+
+        .card h3 {
+            margin-top: 0;
+        }
+
+        .card p {
+            color: #c9d1d9;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 16px;
+            border-radius: 8px;
+            text-decoration: none;
+            border: 1px solid #30363d;
+            color: #e6edf3;
+            font-size: 0.9rem;
+            transition: 0.2s;
+        }
+        
+        .btn:hover {
+            background-color: #21262d;
+        }
+
+
+        p.lead {
+            max-width: 800px;
+            margin: auto;
+            font-size: 1.15rem;
+            line-height: 1.6;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            color: #8b949e;
+            font-size: 0.9rem;
+            border-top: 1px solid #30363d;
+            margin-top: 60px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Informes de Pentesting</h1>
+        <h2>HTB - PortSwiger - Tryhackme - BugBounty</h2>
+        <p class="lead">
+        Soy un pentester autodidacta con experiencia práctica en entornos de laboratorio y retos reales.  
+        He completado más de 100 máquinas en Hack The Box y varios retos de PortSwigger y TryHackMe,  
+        abarcando explotación web, escalada de privilegios en Linux/Windows y desarrollo de herramientas propias orientadas a reconocimiento y Red Team.  
+        Aquí podrás consultar los informes técnicos que reflejan mis análisis y metodologías de trabajo.
+        </p>
+    </header>
+        <div class="report">
+            <div class="card">
+                <h3>Three – Linux – Starting Point Tier 1 – Hack The Box</h3>
+                <p>
+        Máquina Linux de nivel inicial en Hack The Box.
+        Se identificó un subdominio asociado a un servicio de almacenamiento S3 accesible sin autenticación, que contenía recursos utilizados por la aplicación web.
+        La ausencia de controles de acceso permitió la carga de archivos ejecutables y la ejecución remota de comandos en el servidor.
+        El escenario refleja riesgos derivados de configuraciones inseguras en servicios cloud y validación insuficiente de contenido subido.
+                </p>
+                        <a class="btn" href="#">📄 Descargar PDF</a>
+                        <a class="btn" href="https://www.youtube.com/watch?v=ySfqX7N8oJo" target="_blank" rel="noopener noreferrer">▶️ Ver resolución en YouTube</a>
+            </div>
+
+      <!-- INFORME 2 -->
+      <div class="card">
+        <h3>Responder – Windows – Starting Point Tier 1 – Hack The Box</h3>
+        <p>
+Máquina Windows de nivel inicial en Hack The Box.
+Se identificó un recurso compartido accesible que contenía credenciales en texto plano.
+Las credenciales permitían acceso remoto inicial al sistema a través de un servicio de administración.
+La máquina ilustra riesgos de exposición de archivos sensibles y configuraciones inseguras de servicios Windows.
+        </p>
+                <a class="btn" href="#">📄 Descargar PDF</a>
+                <a class="btn" href="https://www.youtube.com/watch?v=QUKNnmEiADA" target="_blank" rel="noopener noreferrer">▶️ Ver resolución en YouTube</a>
+      </div>
+
+      <!-- INFORME 3 -->
+      <div class="card">
+        <h3>Sequel, Appointment, Cocodrile - Linux - Starting Point Tier 1 - Hack The Box</h3>
+        <p>
+Tres máquinas Linux de nivel inicial en Hack The Box, agrupadas para evaluación conjunta.
+Se realizaron técnicas de enumeración de servicios, análisis de recursos expuestos y revisión de credenciales en entornos accesibles públicamente.
+Las máquinas mostraron fallas típicas de configuración y exposición de información sensible, permitiendo acceso inicial a los sistemas.
+Este conjunto refleja riesgos frecuentes en servicios Linux mal configurados y la importancia de controles de acceso adecuados.
+        </p>
+                <a class="btn" href="#">📄 Descargar PDF</a>
+                <a class="btn" href="https://youtu.be/gePP2FcqkOs?si=pJjomhU1JUwsGSC0" target="_blank" rel="noopener noreferrer">▶️ Ver resolución en YouTube</a>
+      </div>
+
+        </div>
+        
+        <div class="back">
+            <a href="index.html">← Volver al inicio</a>
+        </div>
+
+    </div>
+    <footer>
+        © 2026 · Portfolio de Ciberseguridad
+    </footer>
+
+</body>
+</html>
